@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hand-text {
+  font-family: 'Patrick Hand', cursive;
+  letter-spacing: 4px;
+}
+
+.intro {
+  margin-top: 75px !important;
+  margin-bottom: 75px !important;
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+}

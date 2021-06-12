@@ -1,0 +1,27 @@
+.client-image {
+    display: block;
+    width: 300px;
+}
+
+.dashes-gif {
+    height: 80px;
+}
+
+.seperator {
+    width: 100%;
+    padding-left: 170px;
+    padding-right: 170px;
+}
+
+.navigator-text {
+    color: #212529;
+    text-align: center;
+}
+
+.section-clink-container {
+    text-decoration: none !important;
+}
+
+.nasser-junior-gif {
+    width: 220px;
+}

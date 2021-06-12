@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Home from './Home';
+import './styling/index.css';
+import './styling/home.css';
+import Home from './components/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <Router>
+    <Header/>
     <Route exact path="/" component={Home} />
   </Router>,
   document.getElementById('root')
