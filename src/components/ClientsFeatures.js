@@ -1,7 +1,4 @@
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import uclLogo from './../assets/clients/ucl_logo.png'
-import ammarLogo from './../assets/clients/ammar_logo.png'
-import sLogo from './../assets/clients/scientific_american_logo.png'
+import { Image } from 'react-bootstrap';
 import config from '../config'
 import axios from 'axios';
 import  { useState, useEffect } from 'react';

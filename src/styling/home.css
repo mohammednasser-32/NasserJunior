@@ -13,15 +13,33 @@
     padding-right: 170px;
 }
 
-.navigator-text {
-    color: #212529;
-    text-align: center;
-}
-
-.section-clink-container {
+.remove-decoration {
     text-decoration: none !important;
 }
 
-.nasser-junior-gif {
-    width: 220px;
+.nasser-text-gif {
+    height: 200px;
 }
+
+.nasser-avatar-gif {
+    height: 160px;
+}
+
+.gallery-image {
+    max-width: 100%;
+    padding: 5px;
+}
+
+.inactive {
+    opacity: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+    .nasser-text-gif {
+        height: 130px;
+    }
+    
+    .nasser-avatar-gif {
+        height: 100px;
+    }
+  }

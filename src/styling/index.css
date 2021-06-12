@@ -13,8 +13,9 @@ code {
 }
 
 .hand-text {
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand', 'sans-serif';
   letter-spacing: 4px;
+  color: #212529; 
 }
 
 .intro {
