@@ -2,20 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styling/index.css';
 import './styling/home.css';
-import Home from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Header from './components/Header';
 import Illustrations from './components/Illustrations';
 import Comics from './components/Comics';
+import Work from './components/Work';
+import Footer from './components/Footer';
+import About from './components/About';
 
 ReactDOM.render(
   <Router>
     <Header/>
     <Route exact path="/" component={Home} />
     <Route exact path="/illustrations" component={Illustrations} />
-    <Route exact path="/comics/:language" component={Comics} />
+    <Route path="/comics/:language" component={Comics} />
+    <Route path="/work" component={Work} />
+    <Route path="/about" component={About} />
+    <Footer/>
   </Router>,
   document.getElementById('root')
 );

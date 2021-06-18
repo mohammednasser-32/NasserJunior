@@ -1,27 +1,33 @@
 import Navigator from './Navigator';
 import ClientsFeatures from './ClientsFeatures';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import seperator from './../assets/misc/seperator.png'
+import space from './../assets/misc/space.png'
 import React from 'react';
+import  { useState } from 'react';
 
 
 function Home() {
+  const [ images,changeImages ] = useState([])
+
   return (
-    <div>
+    <div className="home-container">
       <Navigator/>
-      <Container>
-        <Row className="intro">
-          <Col xs={12} md={6}>
-            <h4 className="hand-text">
-              Hello, I am Nasser Junior, an illustrator and cartoonist based in Alexandria, Egypt. I use comics to express my thoughts and feelings that can not be put into words. And I work commercially to help clients have their thoughts illustrated too and make their brand standout!
-            </h4>
-          </Col>
-        </Row>
-      </Container>
-      <Image src={seperator} className="seperator"/>
-      <ClientsFeatures target='Clients'/>
-      <Image src={seperator} className="seperator"/>
-      <ClientsFeatures target='Features'/>
+        <Container>
+            <Row className="intro">
+              <Col xs={12} md={6} className="d-flex justify-content-center align-items-center">
+                <h4 className="hand-text">
+                  Hello, I am Nasser Junior, an illustrator and cartoonist based in Alexandria, Egypt. I use comics to express my thoughts and feelings that can not be put into words, and I work commercially to help clients have their thoughts illustrated too and make their brand standout!
+                </h4>
+              </Col>
+              <Col xs={12} md={6} className="d-flex justify-content-center align-items-center">
+                <Image src={space} className="space-image"/>
+              </Col>
+            </Row>
+        </Container>
+        <div className="clients-container">
+          <ClientsFeatures tag='clients'/>
+        </div>
+          <ClientsFeatures tag='features'/>
     </div>
   );
 }

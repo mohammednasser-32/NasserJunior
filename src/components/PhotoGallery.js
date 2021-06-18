@@ -4,33 +4,28 @@ import  { useState, useEffect } from 'react';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
-const breakpointColumnsObj = {
-  default: 3,
-  700: 2,
-  500: 1
-};
-
 function PhotoGallery(props) {
-  const [ images,changeImages ] = useState([])
+  const defaultLimit = 15
+  const [ images,changImages ] = useState([])
+  const [ allImages,changeAllImages ] = useState([])
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
+  const [limit, changeLimit] = useState(defaultLimit);
 
   useEffect(() => {
     const fetchImages = async()=>{
-      const url = `${config.baseUrl}listFolder?path=/${props.folder}`
-      axios.get(url,{ 
-        auth: {
-          username: config.imageioUsername,
-          password: config.imageioPassword
-        }
-      })  .then(function (response) {
-        const array = response.data.images.reverse().map((image, i) => {
-          image.src = image.url
-          return {'src': image.url, 'width': image.width, 'height': image.height}
-        });
-        changeImages(array);
-      })
-
+      const url = `${config.baseUrl}${props.tag}.json`
+      axios.get(url)
+        .then(function (response) {
+        let imagesArray = response.data.resources
+        imagesArray = imagesArray.map((image) => {
+          return {'src': `${config.imageUrl}${image.public_id}.${image.format}`, 'width': image.width, 'height': image.height}      
+        })
+        changeAllImages(imagesArray);
+        imagesArray.length > limit ? changImages(imagesArray.slice(0, limit)) : changImages(imagesArray)
+        }).catch(function (error) {
+          console.log(error)
+        })
     }
     fetchImages()
   }, []);
@@ -44,6 +39,13 @@ function PhotoGallery(props) {
     setViewerIsOpen(false);
   };
 
+  function fetchMore() {
+    let newLimit = limit + defaultLimit
+    newLimit = newLimit > allImages.length ? allImages.length : newLimit
+    changeLimit(newLimit)
+    const newArray = allImages.slice(0, newLimit)
+    changImages(newArray)
+  }
   let rendered = ''
   if(images.length > 0) {
     rendered = (
@@ -65,9 +67,19 @@ function PhotoGallery(props) {
   )
   }
 
+  let seeMore = ''
+  if(allImages.length > limit) {
+    seeMore = (
+    <div className="d-flex justify-content-center">
+      <h3 className="hand-text see-more" onClick={fetchMore}>See More</h3>
+    </div>
+    )
+  }
+
   return (
     <div>
     {rendered}
+    {seeMore}
     </div>
   );
 }

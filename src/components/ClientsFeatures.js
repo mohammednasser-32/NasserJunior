@@ -5,27 +5,25 @@ import  { useState, useEffect } from 'react';
 
 function ClientsFeatures(props) {
   const [ targetImages,changeImages ] = useState([])
+
   useEffect(() => {
     const fetchImages = async()=>{
-      const url = `${config.baseUrl}listFolder?path=/${props.target}`
-      axios.get(url,{ 
-        auth: {
-          username: config.imageioUsername,
-          password: config.imageioPassword
-        }
-      })  .then(function (response) {
-        changeImages(response.data.images);
-      })
-
+      const url = `${config.baseUrl}${props.tag}.json`
+      axios.get(url)
+        .then(function (response) {
+          changeImages(response.data.resources)
+        }).catch(function (error) {
+          console.log(error)
+        })
     }
     fetchImages()
   }, []);
 
-  const images = targetImages.map((image, i) => <Image key={i} src={image.url} className="client-image p-5"/>)
+  const images = targetImages.map((image, i) => <Image key={i} src={`${config.imageUrl}${image.public_id}.${image.format}`} className="client-image p-5"/>)
   return (
     <div className="p-4">
       <div className="d-flex justify-content-center">
-        <h2 className="m-2 hand-text">{props.target === 'Clients' ? 'Clients' : 'Featured in'}</h2>
+        <h2 className="m-2 hand-text">{props.tag === 'clients' ? 'Clients' : 'Featured in'}</h2>
       </div>
       <div className="d-flex flex-wrap justify-content-center align-items-center">
         {images}

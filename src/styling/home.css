@@ -30,8 +30,96 @@
     padding: 5px;
 }
 
+.clients-container {
+    background-color: rgb(238, 238, 238);
+}
+
+.footer {
+    bottom: 0;
+    background-color: rgb(238, 238, 238);
+    max-width: 100%;
+}
+
+.work-together {
+    width: 80%;
+    padding: 30px;
+}
+
 .inactive {
     opacity: 30%;
+}
+
+.animation-container {
+    position: relative;
+}
+
+.space-image {
+    width: 280px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.social-media {
+    width: 40px;
+    margin: 10px;
+} 
+
+.see-more {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.see-more:hover {
+    opacity: 1;
+}
+
+.card-container {
+    width: 70%;
+    cursor: pointer;
+    background-color: rgb(238, 238, 238) !important;
+    margin-bottom: 50px;
+}
+
+.card-main-text {
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 25px !important;
+}
+
+.card-sub-text {
+    letter-spacing: 2px;
+    font-size: 20px !important;
+}
+
+.cards-section {
+    margin-top: 50px !important;
+    margin-bottom: 30px;
+}
+
+.about-image {
+    width: 80%;
+    height: auto;
+}
+
+.about-section {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.about-text {
+    font-size: 20px;
+    letter-spacing: 0.5;
+    white-space: pre-wrap;
+}
+  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 25px); }
+    100%   { transform: translate(0, -0px); }    
 }
 
 @media only screen and (max-width: 600px) {
