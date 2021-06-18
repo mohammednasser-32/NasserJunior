@@ -52,7 +52,7 @@
 }
 
 .inactive-comics {
-    opacity: 50%;
+    color: rgb(146, 146, 146);
 }
 
 .animation-container {
