@@ -1,6 +1,7 @@
 .client-image {
     display: block;
     width: 300px;
+    height: auto !important;
 }
 
 .dashes-gif {
