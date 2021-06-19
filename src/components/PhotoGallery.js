@@ -72,7 +72,7 @@ function PhotoGallery(props) {
   if(allImages.length > limit) {
     seeMore = (
     <div className="d-flex justify-content-center">
-      <Button variant="dark hand-text see-more" onClick={fetchMore}>See More</Button>
+      <Button variant="outline-dark" className="hand-text see-more" onClick={fetchMore}>See More</Button>
     </div>
     )
   }

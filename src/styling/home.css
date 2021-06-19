@@ -77,9 +77,6 @@
 .see-more {
     margin: 10px;
     border-radius: 30px !important;
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
 }
 
 .card-container {
