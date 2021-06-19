@@ -18,7 +18,7 @@ const workArray = [
   {
     mainImage: archMain,
     title: 'Nasser, Heba and Our Dispersed Heritage',
-    text: 'A series of comics I did in collaboration with Dr. Heba Abd El Gawad and the University College of London, aims to rais awairness about Egypt`s artifacts that were dispersed during the English colonial in the 1800s. I also illustrated a card game as a part of this project.',
+    text: 'A series of comics I did in collaboration with Dr. Heba Abd El Gawad and the University College of London, aims to rais awareness about Egypt`s artifacts that were dispersed during the English colonial in the 1800s. I also illustrated a card game as a part of this project.',
     samples: [{'src': arch1}, {'src': arch2}, {'src': arch3}]
   },
   {
