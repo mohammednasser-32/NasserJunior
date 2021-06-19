@@ -2,6 +2,7 @@ import config from '../config'
 import axios from 'axios';
 import  { useState, useEffect } from 'react';
 import Gallery from "react-photo-gallery";
+import { Button } from 'react-bootstrap';
 import Carousel, { Modal, ModalGateway } from "react-images";
 
 function PhotoGallery(props) {
@@ -71,7 +72,7 @@ function PhotoGallery(props) {
   if(allImages.length > limit) {
     seeMore = (
     <div className="d-flex justify-content-center">
-      <h3 className="hand-text see-more" onClick={fetchMore}>See More</h3>
+      <Button variant="dark hand-text see-more" onClick={fetchMore}>See More</Button>
     </div>
     )
   }
