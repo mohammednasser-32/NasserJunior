@@ -77,14 +77,9 @@
 .see-more {
     margin: 10px;
     border-radius: 30px !important;
-    opacity: 0.9;
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
-}
-
-.see-more:hover {
-    opacity: 1;
 }
 
 .card-container {
