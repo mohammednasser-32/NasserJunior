@@ -118,6 +118,13 @@
     white-space: pre-wrap;
 }
   
+.inactive-link {
+    color: rgb(146, 146, 146) !important;
+}
+
+.active-link {
+    color: #212529
+}
 @keyframes floating {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 25px); }

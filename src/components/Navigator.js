@@ -19,7 +19,7 @@ function Navigator() {
       case 'comics':
         image.src = comicsDashed
         break;
-      case 'work':
+      case 'projects':
         image.src = workDashed
         break;
       case 'about':
@@ -38,7 +38,7 @@ function Navigator() {
       case 'comics':
         image.src = comics
         break;
-      case 'work':
+      case 'projects':
         image.src = work
         break;
       case 'about':
@@ -66,9 +66,9 @@ function Navigator() {
             </Link>
           </Col>
           <Col xs={12} sm={6} md={3} className="d-flex justify-content-center p-4">
-            <Link to="/work" className="remove-decoration d-flex flex-column" onMouseEnter={(e) => {addDashes('work')}} onMouseLeave={(e) => {removeDashes('work')}}>
-              <Image src={work} className="client-image p-5" id="work-image"/>
-              <h2 className="text-center hand-text">Work</h2>
+            <Link to="/work" className="remove-decoration d-flex flex-column" onMouseEnter={(e) => {addDashes('projects')}} onMouseLeave={(e) => {removeDashes('projects')}}>
+              <Image src={work} className="client-image p-5" id="projects-image"/>
+              <h2 className="text-center hand-text">Projects</h2>
             </Link>
           </Col>
           <Col xs={12} sm={6} md={3} className="d-flex justify-content-center p-4">

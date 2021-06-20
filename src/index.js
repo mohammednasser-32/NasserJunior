@@ -15,7 +15,7 @@ import About from './components/About';
 
 ReactDOM.render(
   <Router>
-    <Header/>
+    <Route path="/" component={Header} />
     <Route exact path="/" component={Home} />
     <Route exact path="/illustrations" component={Illustrations} />
     <Route path="/comics/:language" component={Comics} />

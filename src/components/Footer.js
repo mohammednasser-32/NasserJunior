@@ -31,7 +31,7 @@ export default function Header() {
               <a href="https://www.twitter.com/nasser_junior/" target="_blank"><Image src={twitter} className="social-media"/></a>
               <a href="https://www.instagram.com/nasser_junior/" target="_blank"><Image src={insta} className="social-media"/></a>
             </div>
-            <h1 className="hand-text">Contact@nasserjunior.com</h1>  
+            <a className="remove-decoration" href="mailto:contact@nasserjunior.com"><h1 className="hand-text">Contact@nasserjunior.com</h1></a>
           </Col>
         </Row>
   );
