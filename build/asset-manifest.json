@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.38799c84.chunk.css",
-    "main.js": "/static/js/main.25d75264.chunk.js",
-    "main.js.map": "/static/js/main.25d75264.chunk.js.map",
+    "main.js": "/static/js/main.69c03eb0.chunk.js",
+    "main.js.map": "/static/js/main.69c03eb0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6b23252f.js",
     "runtime-main.js.map": "/static/js/runtime-main.6b23252f.js.map",
     "static/css/2.61b4cb56.chunk.css": "/static/css/2.61b4cb56.chunk.css",
@@ -14,7 +14,6 @@
     "static/css/2.61b4cb56.chunk.css.map": "/static/css/2.61b4cb56.chunk.css.map",
     "static/css/main.38799c84.chunk.css.map": "/static/css/main.38799c84.chunk.css.map",
     "static/js/2.87de6d26.chunk.js.LICENSE.txt": "/static/js/2.87de6d26.chunk.js.LICENSE.txt",
-    "static/media/about-dashed.ca0ab6cb.png": "/static/media/about-dashed.ca0ab6cb.png",
     "static/media/about.233a5eb5.jpg": "/static/media/about.233a5eb5.jpg",
     "static/media/about.8501fe35.png": "/static/media/about.8501fe35.png",
     "static/media/ammar1.84030e12.jpg": "/static/media/ammar1.84030e12.jpg",
@@ -24,18 +23,15 @@
     "static/media/arch3.b9840757.jpg": "/static/media/arch3.b9840757.jpg",
     "static/media/archmain.55f29a83.jpg": "/static/media/archmain.55f29a83.jpg",
     "static/media/avatar.ae963136.gif": "/static/media/avatar.ae963136.gif",
-    "static/media/comics-dashed.9ffae039.png": "/static/media/comics-dashed.9ffae039.png",
     "static/media/comics.5b9c2fcf.png": "/static/media/comics.5b9c2fcf.png",
     "static/media/nasserjunior.004d0fbc.gif": "/static/media/nasserjunior.004d0fbc.gif",
     "static/media/ool1.e6631d72.jpg": "/static/media/ool1.e6631d72.jpg",
     "static/media/ool2.f4188f46.jpg": "/static/media/ool2.f4188f46.jpg",
     "static/media/ool3.10f2307e.jpg": "/static/media/ool3.10f2307e.jpg",
     "static/media/oolmain.b162bfde.jpg": "/static/media/oolmain.b162bfde.jpg",
-    "static/media/pencil-dashed.700dcae8.png": "/static/media/pencil-dashed.700dcae8.png",
     "static/media/pencil.31ee5887.png": "/static/media/pencil.31ee5887.png",
     "static/media/scientificmain.d896426d.jpg": "/static/media/scientificmain.d896426d.jpg",
     "static/media/space.6dbfee5e.png": "/static/media/space.6dbfee5e.png",
-    "static/media/work-dashed.bcc17615.png": "/static/media/work-dashed.bcc17615.png",
     "static/media/work-together-dim.e90506f9.png": "/static/media/work-together-dim.e90506f9.png",
     "static/media/work-together.9df836bd.png": "/static/media/work-together.9df836bd.png",
     "static/media/work.ffe3c56e.png": "/static/media/work.ffe3c56e.png"
@@ -45,6 +41,6 @@
     "static/css/2.61b4cb56.chunk.css",
     "static/js/2.87de6d26.chunk.js",
     "static/css/main.38799c84.chunk.css",
-    "static/js/main.25d75264.chunk.js"
+    "static/js/main.69c03eb0.chunk.js"
   ]
 }
