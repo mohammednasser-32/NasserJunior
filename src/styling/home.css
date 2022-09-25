@@ -49,16 +49,23 @@
     height: auto !important;
 }
 
-.wonderer-image {
-    width: 320px;
-}
-
-.wonderer-image:hover {
-    width: 340px !important;
-}
-
 .navigator-image:hover {
     width: 320px
+}
+
+.series-image {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto !important;
+}
+
+.series-image:hover {
+    max-width: 320px
 }
 
 .footer {

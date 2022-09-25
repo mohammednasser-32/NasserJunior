@@ -13,17 +13,17 @@ function ComicsSeries() {
         <Row>
           <Col xs={12} sm={6} md={4} className="d-flex justify-content-center p-4">
             <Link to="/comics-series/wonderer" className="remove-decoration d-flex flex-column" >
-              <Image src={wonderer} className="navigator-image"/>
+              <Image src={wonderer} className="series-image"/>
             </Link>
           </Col>
           <Col xs={12} sm={6} md={4} className="d-flex justify-content-center p-4">
             <Link to="/comics-series/programmer-diaries" className="remove-decoration d-flex flex-column" >
-              <Image src={programmerDiaries} className="navigator-image"/>
+              <Image src={programmerDiaries} className="series-image"/>
             </Link>
           </Col>
           <Col xs={12} sm={6} md={4} className="d-flex justify-content-center p-4">
             <Link to="/comics-series/company" className="remove-decoration d-flex flex-column" >
-              <Image src={company} className="navigator-image"/>
+              <Image src={company} className="series-image"/>
             </Link>
           </Col>
         </Row>
