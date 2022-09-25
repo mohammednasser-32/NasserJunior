@@ -4,8 +4,8 @@ import { Container } from 'react-bootstrap';
 function Illustrations(props) {
   return (
     <Container>
-      <h1 className="hand-text text-center" style={{'marginBottom' : 40}}>Illustrations</h1>
-       <PhotoGallery tag='illustrations'/>
+      <h1 className="hand-text text-center" style={{'marginBottom' : 40}}>{props.section}</h1>
+       <PhotoGallery tag={props.tag}/>
     </Container>
   );
 }

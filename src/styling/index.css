@@ -18,6 +18,10 @@ code {
   color: #212529; 
 }
 
+.header-text {
+  letter-spacing: 2px !important;
+}
+
 .intro {
   margin-top: 75px !important;
   margin-bottom: 75px !important;

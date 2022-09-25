@@ -4,10 +4,6 @@
     height: auto !important;
 }
 
-.dashes-gif {
-    height: 80px;
-}
-
 .seperator {
     width: 100%;
     padding-left: 170px;
@@ -36,8 +32,33 @@
     padding: 5px;
 }
 
-.clients-container {
+.grey-bg {
     background-color: rgb(238, 238, 238);
+}
+
+.navigator-image-container {
+    height: 220px;
+}
+.navigator-image {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    display: block;
+    width: 300px;
+    height: auto !important;
+}
+
+.wonderer-image {
+    width: 320px;
+}
+
+.wonderer-image:hover {
+    width: 340px !important;
+}
+
+.navigator-image:hover {
+    width: 320px
 }
 
 .footer {
@@ -84,6 +105,18 @@
     cursor: pointer;
     background-color: rgb(238, 238, 238) !important;
     margin-bottom: 50px;
+}
+
+.series-container {
+    margin-top: 50px;
+    min-height: 500px;
+}
+
+.series-title {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    padding: 10px;
 }
 
 .card-main-text {

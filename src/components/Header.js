@@ -9,11 +9,12 @@ export default function Header(props) {
   if(path !== '/') {
     navigator = (
       <div className="d-flex flex-wrap align-items-center justify-content-center w-100">
-        <Link to="/" className='remove-decoration p-3'><h4 className="hand-text  inactive-link">Home</h4></Link>
-        <Link to="/illustrations" className='remove-decoration p-3'><h4 className={"hand-text " + (path.includes('illustrations') ? 'active-link' : 'inactive-link')}>Illustrations</h4></Link>
-        <Link to="/comics/english" className='remove-decoration p-3'><h4 className={"hand-text " + (path.includes('comics') ? 'active-link' : 'inactive-link')}>Comics</h4></Link>
-        <Link to="/work" className='remove-decoration p-3 '><h4 className={"hand-text " + (path.includes('work') ? 'active-link' : 'inactive-link')}>Projects</h4></Link>
-        <Link to="/about" className='remove-decoration p-3'><h4 className={"hand-text " + (path.includes('about') ? 'active-link' : 'inactive-link')}>About</h4></Link>
+        <Link to="/illustrations" className='remove-decoration p-3'><h4 className={"hand-text header-text " + (path.includes('illustrations') ? 'active-link' : 'inactive-link')}>Illustrations</h4></Link>
+        <Link to="/comics/english" className='remove-decoration p-3'><h4 className={"hand-text header-text " + (path.includes('english') ? 'active-link' : 'inactive-link')}>English Comics</h4></Link>
+        <Link to="/comics/arabic" className='remove-decoration p-3'><h4 className={"hand-text header-text " + (path.includes('arabic') ? 'active-link' : 'inactive-link')}>Arabic Comics</h4></Link>
+        <Link to="/comics-series" className='remove-decoration p-3'><h4 className={"hand-text header-text " + (path.includes('series') ? 'active-link' : 'inactive-link')}>Comics Series</h4></Link>
+        <Link to="/work" className='remove-decoration p-3 '><h4 className={"hand-text header-text " + (path.includes('work') ? 'active-link' : 'inactive-link')}>Projects</h4></Link>
+        <Link to="/about" className='remove-decoration p-3'><h4 className={"hand-text header-text " + (path.includes('about') ? 'active-link' : 'inactive-link')}>About</h4></Link>
       </div>
     )
   }
