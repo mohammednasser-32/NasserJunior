@@ -66,6 +66,7 @@
 }
 
 .series-image:hover {
+    cursor: pointer;
     height: 275px !important;
 }
 
@@ -154,7 +155,7 @@
 }
 
 .about-text {
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 0.5;
     white-space: pre-wrap;
 }
