@@ -16,6 +16,7 @@ import About from './components/About';
 import companyTitle from './assets/misc/company-title.png'
 import wondererTitle from './assets/misc/wonderer-title.png'
 import programmerDiariesTitle from './assets/misc/programmer-diaries-title.png'
+import heritageTitle from './assets/misc/heritage-title.png'
 
 ReactDOM.render(
   <Router>
@@ -44,6 +45,10 @@ ReactDOM.render(
     <Route
       path="/comics-series/programmer-diaries"
       render={() => <SeriesSection titleImage={programmerDiariesTitle} tag='code' />}
+    />
+    <Route
+      path="/comics-series/egypts-dispersed-heritage"
+      render={() => <SeriesSection titleImage={heritageTitle} tag='egypts-dispersed-heritage' />}
     />
     <Route exact path="/comics-series" component={ComicsSeries} />
     <Route path="/work" component={Work} />
