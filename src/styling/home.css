@@ -146,7 +146,7 @@
 
 .about-image {
     width: 80%;
-    height: auto;
+    height: fit-content;
 }
 
 .about-section {
