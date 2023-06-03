@@ -52,19 +52,21 @@
     height: 260px
 }
 
+.series-image-container {
+    height: 300px;
+}
+
 .series-image {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 0;
     padding-bottom: 1rem;
     display: block;
-    width: 100%;
-    max-width: 300px;
-    height: auto !important;
+    height: 260px !important;
 }
 
 .series-image:hover {
-    max-width: 320px
+    height: 275px !important;
 }
 
 .footer {

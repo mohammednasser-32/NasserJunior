@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c291998.chunk.css",
-    "main.js": "/static/js/main.31f15e7d.chunk.js",
-    "main.js.map": "/static/js/main.31f15e7d.chunk.js.map",
+    "main.css": "/static/css/main.fcc77977.chunk.css",
+    "main.js": "/static/js/main.56a6f52e.chunk.js",
+    "main.js.map": "/static/js/main.56a6f52e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6b23252f.js",
     "runtime-main.js.map": "/static/js/runtime-main.6b23252f.js.map",
     "static/css/2.61b4cb56.chunk.css": "/static/css/2.61b4cb56.chunk.css",
-    "static/js/2.a4dd765d.chunk.js": "/static/js/2.a4dd765d.chunk.js",
-    "static/js/2.a4dd765d.chunk.js.map": "/static/js/2.a4dd765d.chunk.js.map",
+    "static/js/2.ca846093.chunk.js": "/static/js/2.ca846093.chunk.js",
+    "static/js/2.ca846093.chunk.js.map": "/static/js/2.ca846093.chunk.js.map",
     "static/js/3.4f49829b.chunk.js": "/static/js/3.4f49829b.chunk.js",
     "static/js/3.4f49829b.chunk.js.map": "/static/js/3.4f49829b.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.61b4cb56.chunk.css.map": "/static/css/2.61b4cb56.chunk.css.map",
-    "static/css/main.1c291998.chunk.css.map": "/static/css/main.1c291998.chunk.css.map",
-    "static/js/2.a4dd765d.chunk.js.LICENSE.txt": "/static/js/2.a4dd765d.chunk.js.LICENSE.txt",
+    "static/css/main.fcc77977.chunk.css.map": "/static/css/main.fcc77977.chunk.css.map",
+    "static/js/2.ca846093.chunk.js.LICENSE.txt": "/static/js/2.ca846093.chunk.js.LICENSE.txt",
     "static/media/about.233a5eb5.jpg": "/static/media/about.233a5eb5.jpg",
     "static/media/about.8501fe35.png": "/static/media/about.8501fe35.png",
     "static/media/ammar1.84030e12.jpg": "/static/media/ammar1.84030e12.jpg",
@@ -27,6 +27,7 @@
     "static/media/comics-series.9d894c6d.png": "/static/media/comics-series.9d894c6d.png",
     "static/media/company-title.720fde17.png": "/static/media/company-title.720fde17.png",
     "static/media/company.d7d6f62b.png": "/static/media/company.d7d6f62b.png",
+    "static/media/egypts-dispersed-heritage.00d5253e.png": "/static/media/egypts-dispersed-heritage.00d5253e.png",
     "static/media/english-comics.806efde3.png": "/static/media/english-comics.806efde3.png",
     "static/media/nasserjunior.004d0fbc.gif": "/static/media/nasserjunior.004d0fbc.gif",
     "static/media/ool1.e6631d72.jpg": "/static/media/ool1.e6631d72.jpg",
@@ -37,8 +38,10 @@
     "static/media/programmer-diaries-title.3ce8f294.png": "/static/media/programmer-diaries-title.3ce8f294.png",
     "static/media/programmer-diaries.e15107f1.png": "/static/media/programmer-diaries.e15107f1.png",
     "static/media/scientificmain.d896426d.jpg": "/static/media/scientificmain.d896426d.jpg",
+    "static/media/shop.2f3657f1.png": "/static/media/shop.2f3657f1.png",
     "static/media/space.6dbfee5e.png": "/static/media/space.6dbfee5e.png",
     "static/media/wanderer.f0cc69e7.png": "/static/media/wanderer.f0cc69e7.png",
+    "static/media/whatsapp.63ae124b.png": "/static/media/whatsapp.63ae124b.png",
     "static/media/wonderer-title.3318e5a6.png": "/static/media/wonderer-title.3318e5a6.png",
     "static/media/work-together-dim.e90506f9.png": "/static/media/work-together-dim.e90506f9.png",
     "static/media/work-together.9df836bd.png": "/static/media/work-together.9df836bd.png",
@@ -47,8 +50,8 @@
   "entrypoints": [
     "static/js/runtime-main.6b23252f.js",
     "static/css/2.61b4cb56.chunk.css",
-    "static/js/2.a4dd765d.chunk.js",
-    "static/css/main.1c291998.chunk.css",
-    "static/js/main.31f15e7d.chunk.js"
+    "static/js/2.ca846093.chunk.js",
+    "static/css/main.fcc77977.chunk.css",
+    "static/js/main.56a6f52e.chunk.js"
   ]
 }
