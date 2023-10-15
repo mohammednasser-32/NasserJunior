@@ -23,7 +23,7 @@ ReactDOM.render(
   <Router>
     <Route path="/" component={Header} />
     <Route exact path="/" component={Home} />
-    <Route
+    {/* <Route
       path="/illustrations"
       render={() => <ImageSection section='Illustrations' tag='illustrations' />}
     />
@@ -57,7 +57,7 @@ ReactDOM.render(
     />
     <Route exact path="/comics-series" component={ComicsSeries} />
     <Route path="/work" component={Work} />
-    <Route path="/about" component={About} />
+    <Route path="/about" component={About} /> */}
     <Footer/>
   </Router>,
   document.getElementById('root')

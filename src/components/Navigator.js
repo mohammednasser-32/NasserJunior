@@ -13,7 +13,10 @@ function Navigator() {
 
   return (
     <div className="p-4 grey-bg">
-        <Row>
+      <div className="d-flex justify-content-center align-items-center">
+        <h3 className="hand-text"> Website is under construction </h3>
+      </div>
+        {/* <Row>
           <Col xs={12} sm={6} md={3} className="d-flex justify-content-center p-4">
             <Link to="/illustrations" className="remove-decoration d-flex flex-column" >
               <div className="navigator-image-container">
@@ -78,7 +81,7 @@ function Navigator() {
               <h2 className="text-center hand-text">About</h2>
             </Link>
           </Col>
-        </Row>
+        </Row> */}
     </div>
   );
 }

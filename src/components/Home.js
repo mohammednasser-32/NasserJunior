@@ -23,10 +23,10 @@ function Home() {
           </Col>
         </Row>
       </Container>
-      <div className="grey-bg">
+      {/* <div className="grey-bg">
         <ClientsFeatures tag='clients'/>
       </div>
-        <ClientsFeatures tag='features'/>
+        <ClientsFeatures tag='features'/> */}
     </div>
   );
 }
