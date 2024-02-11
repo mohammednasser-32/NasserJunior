@@ -5,11 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff8e09f !important;
+  background-image: url("../assets/misc/stars-bg.png");
+  background-size:contain;
+  background-repeat: repeat;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --main: #FFC300;
 }
 
 .hand-text {
@@ -18,13 +26,4 @@ code {
   color: #212529; 
 }
 
-.header-text {
-  letter-spacing: 2px !important;
-}
-
-.intro {
-  margin-top: 75px !important;
-  margin-bottom: 75px !important;
-  margin-left: 2rem !important;
-  margin-right: 2rem !important;
-}
+iframe#webpack-dev-server-client-overlay{display:none!important}

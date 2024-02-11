@@ -4,27 +4,27 @@
     height: auto !important;
 }
 
+.clients {
+    background-color: var(--main);
+}
+
 .seperator {
     width: 100%;
     padding-left: 170px;
     padding-right: 170px;
 }
 
-.remove-decoration {
+.header-link {
     text-decoration: none !important;
+    padding: 2rem;
 }
 
 .nasser-text-gif {
-    height: 130px;
-    margin-top: 30px;
+    height: 180px;
 }
 
 .nasser-avatar-gif {
-    height: 160px;
-}
-
-.header {
-    background-color: white;
+    height: 260px;
 }
 
 .gallery-image {
@@ -72,7 +72,7 @@
 
 .footer {
     bottom: 0;
-    background-color: rgb(238, 238, 238);
+    background-color: var(--main);
     max-width: 100%;
 }
 
@@ -90,18 +90,13 @@
 }
 
 .space-image {
-    width: 280px;
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
+    height: 450px;
+    animation: rotating 25s linear infinite;
 }
 
 .social-media {
-    width: 40px;
-    margin: 10px;
+    height: 60px;
+    margin: 20px;
 } 
 
 .see-more {
@@ -112,7 +107,7 @@
 .card-container {
     width: 70%;
     cursor: pointer;
-    background-color: rgb(238, 238, 238) !important;
+    background-color:var(--main) !important;
     margin-bottom: 50px;
 }
 
@@ -159,18 +154,61 @@
     letter-spacing: 0.5;
     white-space: pre-wrap;
 }
+
+.header-text {
+    letter-spacing: 2px !important;
+    font-size: 30px;
+  }
   
-.inactive-link {
-    color: rgb(146, 146, 146) !important;
+.intro {
+    margin-top: 75px !important;
+    margin-bottom: 75px !important;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
 }
 
 .active-link {
-    color: #212529
+    color: #212529;
+    color: var(--main) !important;
 }
-@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 25px); }
-    100%   { transform: translate(0, -0px); }    
+
+.remove-decoration {
+    text-decoration: none !important;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.column-container {
+    flex-grow: 1;
+    width: 30%;
+}
+
+.comic-image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.follow-image {
+    max-width: 100%;
+}
+
+.panel-image {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes rotating {
+    0% { transform: rotate(0); }
+    100%   { transform: rotate(360deg); }    
 }
 
 @media only screen and (max-width: 600px) {
@@ -180,5 +218,36 @@
     
     .nasser-avatar-gif {
         height: 120px;
+    }
+
+    .header-text {
+        font-size: 18px;
+        font-size: bold;
+    }
+
+    .header-link {
+        padding: 10px;
+    }
+
+    .column-container {
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .intro-text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .space-image {
+        height: 250px;
+    }
+
+    .email-text {
+        font-size: 20px;
+    }
+
+    .social-media {
+        height: 30px;
     }
   }

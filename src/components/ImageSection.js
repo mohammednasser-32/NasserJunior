@@ -1,11 +1,14 @@
 import PhotoGallery from './PhotoGallery';
-import { Container } from 'react-bootstrap';
+import follow from './../assets/misc/follow.png'
+import { Container, Image } from 'react-bootstrap';
 
 function Illustrations(props) {
   return (
     <Container>
-      <h1 className="hand-text text-center" style={{'marginBottom' : 40}}>{props.section}</h1>
        <PhotoGallery tag={props.tag}/>
+       <div className="d-flex justify-content-center">
+          <Image src={follow} className="follow-image"/>
+       </div>
     </Container>
   );
 }

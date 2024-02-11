@@ -4,7 +4,7 @@ import workTogetherDim from './../assets/misc/work-together-dim.png'
 import workTogetherLight from './../assets/misc/work-together.png'
 import face from './../assets/misc/face.png'
 import insta from './../assets/misc/insta.png'
-import twitter from './../assets/misc/twitter.png'
+import x from './../assets/misc/x.png'
 
 export default function Header() {
   const imageSequence = [workTogetherDim, workTogetherLight]
@@ -28,10 +28,10 @@ export default function Header() {
           <Col xs={12} md={6} className="d-flex flex-column align-items-center justify-content-center">
             <div className="d-flex justify-content-center">
               <a href="https://www.facebook.com/Mnasserjunior/" target="_blank"><Image src={face} className="social-media"/></a>
-              <a href="https://www.twitter.com/nasser_junior/" target="_blank"><Image src={twitter} className="social-media"/></a>
+              <a href="https://www.twitter.com/nasser_junior/" target="_blank"><Image src={x} className="social-media"/></a>
               <a href="https://www.instagram.com/nasser_junior/" target="_blank"><Image src={insta} className="social-media"/></a>
             </div>
-            <a className="remove-decoration" href="mailto:contact@nasserjunior.com"><h1 className="hand-text">Contact@nasserjunior.com</h1></a>
+            <a className="remove-decoration" href="mailto:contact@nasserjunior.com"><h1 className="hand-text email-text">Contact@nasserjunior.com</h1></a>
           </Col>
         </Row>
   );

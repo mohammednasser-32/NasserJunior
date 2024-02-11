@@ -1,27 +1,19 @@
 import { Image } from 'react-bootstrap';
-import config from '../config'
-import axios from 'axios';
-import  { useState, useEffect } from 'react';
 
 function ClientsFeatures(props) {
-  const [ targetImages,changeImages ] = useState([])
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+  var targetImages = []
+  if (props.tag === 'features') {
+    targetImages = importAll(require.context('../assets/features', false, /\.(png|jpe?g|svg)$/));
+  } else {
+    targetImages = importAll(require.context('../assets/clients', false, /\.(png|jpe?g|svg)$/));
+  }
 
-  useEffect(() => {
-    const fetchImages = async()=>{
-      const url = `${config.baseUrl}${props.tag}.json`
-      axios.get(url)
-        .then(function (response) {
-          changeImages(response.data.resources)
-        }).catch(function (error) {
-          console.log(error)
-        })
-    }
-    fetchImages()
-  }, []);
-
-  const images = targetImages.map((image, i) => <Image key={i} src={`${config.imageUrl}${image.public_id}.${image.format}`} className="client-image p-5"/>)
+  const images = targetImages.map((image, i) => <Image key={i} src={image} className="client-image p-5"/>)
   return (
-    <div className="p-4">
+    <div className={`${props.tag === 'clients' ? 'clients' : 'features'} p-4`}>
       <div className="d-flex justify-content-center">
         <h2 className="m-2 hand-text">{props.tag === 'clients' ? 'Clients' : 'Featured in'}</h2>
       </div>
