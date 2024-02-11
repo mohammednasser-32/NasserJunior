@@ -32,10 +32,6 @@ function PhotoGallery(props) {
     columnArray.push(targetImages.slice(i, i + columnLength));
   }
 
-  const images = (column) => column.map((image, i) => (
-      <Image key={i} src={image} className="comic-image" onClick={() => openLightbox(i)}/>
-  ));
-
   const renderImages = (
         <div>
         <div className="images-container">
