@@ -1,20 +1,10 @@
-import  { useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { Image } from 'react-bootstrap';
 import Carousel, { Modal, ModalGateway } from "react-images";
 
 function PhotoGallery(props) {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
- 
-  function openLightbox(index)  {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  };
-
-  function closeLightbox () {
-    setViewerIsOpen(false);
-  };
-
   function importAll(r) {
     return r.keys().map(r);
   }
@@ -27,19 +17,36 @@ function PhotoGallery(props) {
   }
 
   const columnLength = targetImages.length/3;
+
+  function openLightbox(columnIndex, imageIndex)  {
+    const index = columnIndex * columnLength + imageIndex
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  };
+
+  function closeLightbox () {
+    setViewerIsOpen(false);
+  };
+
   for (let i = 0; i < targetImages.length; i += columnLength) {
     columnArray.push(targetImages.slice(i, i + columnLength));
   }
 
   const images = (column) => column.map((image, i) => (
-      <Image key={i} src={image} className="comic-image"/>
+      <Image key={i} src={image} className="comic-image" onClick={() => openLightbox(i)}/>
   ));
 
   const renderImages = (
         <div>
         <div className="images-container">
-          { columnArray.map((column) => (
-            <div className="column-container">{images(column)}</div>
+          { columnArray.map((column, columnIndex) => (
+            <div className="column-container" key={`column-${columnIndex}`}>
+              {
+                column.map((image, imageIndex) => (
+                <Image src={image} className="comic-image" key={`comic-${imageIndex}`} onClick={() => openLightbox(columnIndex, imageIndex)}/>
+                ))
+              }
+            </div>
           ))}
         </div>
         <ModalGateway>
@@ -48,7 +55,7 @@ function PhotoGallery(props) {
               <Carousel
                 currentIndex={currentImage}
                 views={targetImages.map(x => ({
-                  ...x
+                  src: x
                 }))}
               />
             </Modal>

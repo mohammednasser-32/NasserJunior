@@ -190,6 +190,7 @@
 .comic-image {
     width: 100%;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .intro-text {
